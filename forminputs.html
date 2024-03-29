@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="companytable.html" method="get">
+        Name<input type="text" name="username" required><br>
+        age<input type="number" name="age" min="18" max="60" step="2"><br>
+        mobile<input type="tel" name="mobile" pattern="[0-9]{10}"><br>
+        email<input type="email" name="email" required><br>
+        company<input type="text" name="company" readonly value="voya"><br>
+        city<input type="text" name="city"  value="bengaluru" disabled><br>
+        Date of booking<input type="date" name="date" min="2023-03-11" max="2024-03-11"><br>
+        Starting time<input type="datetime-local" name="datetime" min="2023-03-11T08:00" max="2024-03-11T08:00"><br>
+        color<input type="color" name="color"><br>
+        range<input type="range" name="range" min="20000" max="100000"><br>
+        salary<input type="text" name="salary" onmouseover="salary.value=parseInt(range.value)"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
